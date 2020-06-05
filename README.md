@@ -1,22 +1,20 @@
-# circuito
+# Probando NuxtJS
 
-> My wonderful Nuxt.js project
+Pues un pequeño proyecto creado con el Framework NuxtJS basado en VueJS con fines didacticos. Es decir será algo asi como una pequeña web con una lista de tiempos de Circuito de Nürburgring y poco más...
 
-## Build Setup
+## Instalación
 
 ```bash
-# install dependencies
+# Instalar dependencias
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Arrancar servidor en localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# Compilar para producción y lanzar servidor
 $ npm run build
 $ npm run start
 
-# generate static project
+# Generar proyecto estático
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
