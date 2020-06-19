@@ -6,6 +6,7 @@ Un pequeño proyecto creado con el Framework NuxtJS basado en VueJS con fines di
 * Video 2 "Paginas, Assets & Links" -> Release V2
 * Video 3 Creación de BackEnd con Sequelize ORM, Express y JWT podeis encontrar aquí: https://github.com/antonrodin/nuxt-backend-circuito
 * Video 4 "Probando la función de asyncData(context)" -> Release V4
+* Video 5 "Probando el modulo propio Axios de Nuxt" -> Release V5
 
 ## Instalación
 
