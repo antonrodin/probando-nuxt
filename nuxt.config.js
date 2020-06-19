@@ -19,7 +19,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'red' },
   /*
   ** Global CSS
   */
@@ -51,6 +51,9 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    progress: true,
+    baseURL: process.env.API_ENDPOINT || "http://localhost:3001/api",
+    retry: { retries: 2 }
   },
   /*
   ** Build configuration
