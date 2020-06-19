@@ -24,39 +24,25 @@ export default {
         }
     },
 
-    // La forma de hacerlo con async/await
-    async asyncData({ query }) {
-        let response = await fetch(`http://localhost:3001/api/records?perPage=${query.perPage}`);
-        let json = await response.json();
-
-        return json;
+    async asyncData({ $axios }) {
+        let response = await $axios.$get("/records");
+        
+        return response;
     },
-
-    created() {
-        console.log(this.total, this.page);
-    }
-
-    // La forma de hacerlo con promsesas
-    // asyncData(context) {
-    //     return new Promise((resolve, reject) => {
-    //         fetch('http://localhost:3001/api/records')
-    //             .then(response => response.json())
-    //             .then(json => resolve(json));
-    //     }).then(json => {
-    //         return json;
-    //     })
-    // },
 
     // data() {
     //     return {
-    //         records: []
+    //         records: [],
+    //         total: 0
     //     }
     // },
 
     // created() {
-    //     fetch('http://localhost:3001/api/records')
-    //         .then(response => response.json())
-    //         .then(json => this.records = json.records);
+    //     this.$axios.$get("http://localhost:3001/api/records").then(response => {
+    //         this.records = response.records;
+    //         this.total = response.total;
+    //     });
     // }
+
 }
 </script>
